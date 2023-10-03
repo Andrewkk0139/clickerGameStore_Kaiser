@@ -17,6 +17,7 @@
 		3BFEDF582ACC584900BFCE30 /* clickerGameStore_KaiserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFEDF572ACC584900BFCE30 /* clickerGameStore_KaiserTests.swift */; };
 		3BFEDF622ACC584900BFCE30 /* clickerGameStore_KaiserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFEDF612ACC584900BFCE30 /* clickerGameStore_KaiserUITests.swift */; };
 		3BFEDF642ACC584900BFCE30 /* clickerGameStore_KaiserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFEDF632ACC584900BFCE30 /* clickerGameStore_KaiserUITestsLaunchTests.swift */; };
+		3BFEDF712ACC5C9F00BFCE30 /* storeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFEDF702ACC5C9F00BFCE30 /* storeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3BFEDF5D2ACC584900BFCE30 /* clickerGameStore_KaiserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clickerGameStore_KaiserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFEDF612ACC584900BFCE30 /* clickerGameStore_KaiserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickerGameStore_KaiserUITests.swift; sourceTree = "<group>"; };
 		3BFEDF632ACC584900BFCE30 /* clickerGameStore_KaiserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickerGameStore_KaiserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BFEDF702ACC5C9F00BFCE30 /* storeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3BFEDF3F2ACC584800BFCE30 /* SceneDelegate.swift */,
 				3BFEDF412ACC584800BFCE30 /* ViewController.swift */,
 				3BFEDF432ACC584800BFCE30 /* Main.storyboard */,
+				3BFEDF702ACC5C9F00BFCE30 /* storeViewController.swift */,
 				3BFEDF492ACC584900BFCE30 /* Assets.xcassets */,
 				3BFEDF4B2ACC584900BFCE30 /* LaunchScreen.storyboard */,
 				3BFEDF4E2ACC584900BFCE30 /* Info.plist */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFEDF422ACC584800BFCE30 /* ViewController.swift in Sources */,
+				3BFEDF712ACC5C9F00BFCE30 /* storeViewController.swift in Sources */,
 				3BFEDF3E2ACC584800BFCE30 /* AppDelegate.swift in Sources */,
 				3BFEDF482ACC584800BFCE30 /* clickerGameStore_Kaiser.xcdatamodeld in Sources */,
 				3BFEDF402ACC584800BFCE30 /* SceneDelegate.swift in Sources */,
