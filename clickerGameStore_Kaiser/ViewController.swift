@@ -13,10 +13,15 @@ class ViewController: UIViewController {
     var clickCount = 1
     @IBOutlet weak var pointsOutlet: UILabel!
     
+    @IBOutlet weak var imageView1: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        imageView1.image = UIImage(named: "coolBanana")
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        pointsOutlet.text = "Points: \(points)"
     }
 
     @IBAction func clickedAction(_ sender: Any) {
@@ -32,7 +37,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as! storeViewController
         nvc.delegate = self
-        nvc.storePointsOutlet.text = "Points: \(points)"
+        nvc.storePoints = points
     }
     
     

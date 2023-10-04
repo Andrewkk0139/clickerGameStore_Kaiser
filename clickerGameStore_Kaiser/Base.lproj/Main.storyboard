@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rrl-sc-xXZ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -55,12 +55,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uwy-uW-4Nd">
+                                <rect key="frame" x="56" y="368" width="280" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.76105947375283056" green="1" blue="0.98664976722352393" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="d5y-4M-7Nl"/>
                     <connections>
+                        <outlet property="imageView1" destination="Uwy-uW-4Nd" id="vJ4-Wf-C5q"/>
                         <outlet property="pointsOutlet" destination="Zk5-Fb-75K" id="Chv-SB-VQL"/>
                         <segue destination="TSt-Xl-ItD" kind="show" identifier="toStore" id="5Pz-F8-dy4"/>
                     </connections>
@@ -99,6 +104,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.95274747900000001" green="1" blue="0.57118692609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="doublePoints:" destination="TSt-Xl-ItD" eventType="touchUpInside" id="z5o-6c-gTP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Triple Clicks - 200 Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apT-Yu-9kd">
                                 <rect key="frame" x="67" y="321" width="259" height="58"/>
@@ -115,6 +123,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.95274747900000001" green="1" blue="0.57118692609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="triplePoints:" destination="TSt-Xl-ItD" eventType="touchUpInside" id="PQh-Uk-qvd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f28-b2-hPM">
                                 <rect key="frame" x="16" y="106" width="152" height="58"/>
@@ -129,7 +140,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="tJ0-bg-n4i"/>
                     <connections>
+                        <outlet property="doubleButton" destination="UA4-ea-tuo" id="ovr-1C-NEI"/>
                         <outlet property="storePointsOutlet" destination="f28-b2-hPM" id="JmB-GA-TE1"/>
+                        <outlet property="tripleButton" destination="xXZ-N2-7tx" id="lTA-Bc-a80"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toClicker" id="p4s-cN-e3l"/>
                     </connections>
                 </viewController>
